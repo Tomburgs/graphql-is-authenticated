@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "lib": ["ESNext"],
+        "target": "es6",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "rootDir": "src",
+        "outDir": "dist"
+    },
+    "include": ["src"],
+    "exclude": ["dist", "node_modules"]
+}

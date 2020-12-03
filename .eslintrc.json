@@ -1,0 +1,15 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "extends": ["plugin:@typescript-eslint/recommended"],
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "quotes": [1, "single"],
+        "no-console": 1,
+        "eqeqeq": [1, "always"]
+    }
+}

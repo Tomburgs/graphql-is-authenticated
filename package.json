@@ -1,0 +1,32 @@
+{
+  "name": "graphql-is-authenticated",
+  "version": "1.0.0",
+  "description": "GraphQL directive for checking if user is authenticated",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Tomburgs/graphql-is-authenticated",
+  "author": "Toms Burgmanis",
+  "license": "MIT",
+  "scripts": {
+    "dev": "jest --watch",
+    "build": "rm -rf dist && tsc -d",
+    "lint": "eslint src/",
+    "test": "jest",
+    "prerelease": "yarn run build && yarn run test && yarn run lint",
+    "preversion": "yarn run prerelease",
+    "prepublish": "yarn run prerelease"
+  },
+  "dependencies": {
+    "graphql": "^14.0.0",
+    "graphql-tag": "^2.0.0",
+    "graphql-tools": "^7.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "micro": "^9.3.4",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2"
+  }
+}

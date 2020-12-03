@@ -1,0 +1,13 @@
+# deps
+/node_modules
+
+# build
+/dist
+
+# misc
+.DS_STORE
+
+# debugs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

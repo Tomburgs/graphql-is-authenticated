@@ -1,6 +1,6 @@
 import { SchemaDirectiveVisitor } from 'graphql-tools';
 import { defaultFieldResolver, DocumentNode, GraphQLField } from 'graphql';
-import { AuthenticationError } from 'errors';
+import { AuthenticationError } from './errors';
 import gql from 'graphql-tag';
 
 type CheckIsAuthenticated<Context = any> = undefined | ((ctx: Context) => Promise<boolean> | boolean);

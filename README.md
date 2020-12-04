@@ -7,8 +7,9 @@
     <img alt="Size" src="https://img.shields.io/bundlephobia/minzip/graphql-is-authenticated?label=Size">
     <img alt="Downloads" src="https://img.shields.io/npm/dm/graphql-is-authenticated?label=Downloads">
 </p>
-
+<p align="center">
 A handy-dandy GraphQL directive for setting authentication requirement on fields.
+</p>
 
 ## Install
 

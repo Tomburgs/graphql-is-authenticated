@@ -1,4 +1,6 @@
-<h1 align="center">GraphQL isAuthenticated</h1>
+<p align="center">
+    <img alt="GraphQL isAuthenticated" src="https://repository-images.githubusercontent.com/318343982/4e6f7b80-3673-11eb-83bb-2f553d6cafa2" width="600px">
+</p>
 <p align="center">
     <img alt="License" src="https://img.shields.io/github/license/Tomburgs/graphql-is-authenticated?label=License">
     <img alt="Version" src="https://img.shields.io/github/package-json/v/Tomburgs/graphql-is-authenticated?label=Version">

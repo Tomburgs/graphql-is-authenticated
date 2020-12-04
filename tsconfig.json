@@ -7,6 +7,10 @@
         "moduleResolution": "Node",
         "esModuleInterop": true,
         "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
         "rootDir": "src",
         "outDir": "dist"
     },

@@ -10,7 +10,7 @@ import gql from 'graphql-tag';
 /*
  * In honor of the Cambridge coffee pot.
  */
-const IM_A_TEAPOT = "I'm a teapot";
+const IM_A_TEAPOT = 'I\'m a teapot';
 const resolvers = {
     Query: {
         teapot: () => IM_A_TEAPOT
@@ -59,11 +59,12 @@ describe('isAuthenticated = false', () => {
             typeDefs: [createIsAuthenticatedTypeDef(), typeDefs]
         });
 
-        const { errors, errors: [firstError], data } = await graphql(schema, defaultQuery);
+        const { errors, data } = await graphql(schema, defaultQuery);
+        const [firstError] = errors ?? [];
 
         expect(data).toEqual(null);
         expect(errors).toHaveLength(1);
-        expect(firstError.extensions.code).toEqual(UNAUTHENTICATED);
+        expect(firstError?.extensions?.code).toEqual(UNAUTHENTICATED);
     });
 });
 
@@ -141,10 +142,11 @@ describe('Custom isAuthenticated resolver', () => {
             }
         });
 
-        const { errors, errors: [firstError], data } = await graphql(schema, defaultQuery);
+        const { errors, data } = await graphql(schema, defaultQuery);
+        const [firstError] = errors ?? [];
 
         expect(data).toEqual(null);
         expect(errors).toHaveLength(1);
-        expect(firstError.extensions.code).toEqual(UNAUTHENTICATED);
+        expect(firstError?.extensions?.code).toEqual(UNAUTHENTICATED);
     });
 });

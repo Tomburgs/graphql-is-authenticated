@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "jest --watch",
-    "build": "rm -rf dist && tsc -d",
+    "build": "rm -rf dist && tsc",
     "lint": "eslint src/",
     "test": "jest",
     "prerelease": "yarn run build && yarn run test && yarn run lint",
@@ -21,9 +21,12 @@
   "dependencies": {
     "graphql": "^14.0.0",
     "graphql-tag": "^2.0.0",
-    "graphql-tools": "^7.0.0"
+    "graphql-tools": "^4.0.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.16",
+    "@types/node": "^14.14.10",
+    "@types/ws": "^7.4.0",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0",

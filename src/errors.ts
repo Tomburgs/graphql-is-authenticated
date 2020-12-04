@@ -16,7 +16,6 @@ export class AuthenticationError extends Error implements GraphQLError {
 
         this.name = 'AuthenticationError';
         this.extensions = {
-            ...this.extensions,
             code: UNAUTHENTICATED
         };
     }

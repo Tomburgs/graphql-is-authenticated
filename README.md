@@ -2,7 +2,7 @@
 <p align="center">
     <img alt="License" src="https://img.shields.io/github/license/Tomburgs/graphql-is-authenticated?label=License">
     <img alt="Version" src="https://img.shields.io/github/package-json/v/Tomburgs/graphql-is-authenticated?label=Version">
-    <img alt="Size" src="https://img.shields.io/bundlephobia/min/graphql-is-authenticated?label=Size">
+    <img alt="Size" src="https://img.shields.io/bundlephobia/minzip/graphql-is-authenticated?label=Size">
     <img alt="Downloads" src="https://img.shields.io/npm/dm/graphql-is-authenticated?label=Downloads">
 </p>
 

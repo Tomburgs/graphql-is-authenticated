@@ -62,11 +62,25 @@ import {
     createIsAuthenticatedTypeDef
 } from 'graphql-is-authenticated';
 
+const checkIsUserAuthenticated = async (ctx) => {
+    const { req } = ctx;
+    const { authorization } = ctx.headers;
+
+    if (!authorization) {
+        return false;
+    }
+
+    const isAuthenticated = await verifyAuthorizationHeader(authorization);
+
+    return isAuthenticated;
+};
+
 new ApolloServer({
     typeDefs: [createIsAuthenticatedTypeDef(), ...otherTypeDefs],
     schemaDirectives: {
         isAuthenticated: createIsAuthenticatedDirective(checkIsUserAuthenticated)
     }
+    ...
 });
 ```
 

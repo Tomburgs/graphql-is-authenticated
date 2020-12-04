@@ -1,9 +1,11 @@
 {
   "name": "graphql-is-authenticated",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GraphQL directive for checking if user is authenticated",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": "https://github.com/Tomburgs/graphql-is-authenticated",
   "author": "Toms Burgmanis",
   "license": "MIT",
